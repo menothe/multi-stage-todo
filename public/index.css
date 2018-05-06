@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.column h3 {
+    text-transform: uppercase;
+}
+
+.addTask {
+    flex-direction: row;
+}
+
+.card {
+  width: 100%
+}
