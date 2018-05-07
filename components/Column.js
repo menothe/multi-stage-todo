@@ -1,6 +1,7 @@
 import React from 'react';
 import { TaskCard } from './TaskCard';
 
+//reusable column for each todo state
 export const Column = ({ label, tasks, state, progressTask }) => (
   <div className={'column'}>
     <h3>{label}</h3>

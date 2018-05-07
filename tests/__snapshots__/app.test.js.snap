@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AddTaskDialogue correctly 1`] = `
+<Dialog
+  actions={
+    Array [
+      <RaisedButton
+        disabled={false}
+        fullWidth={false}
+        label="Add Task"
+        labelPosition="after"
+        onClick={undefined}
+        primary={true}
+        secondary={false}
+        style={
+          Object {
+            "float": "right",
+            "marginBottom": 15,
+          }
+        }
+      />,
+    ]
+  }
+  autoDetectWindowHeight={true}
+  autoScrollBodyContent={false}
+  modal={true}
+  open={undefined}
+  repositionOnUpdate={true}
+>
+  <TextField
+    disabled={false}
+    floatingLabelFixed={false}
+    fullWidth={true}
+    hintText="Task Name"
+    id="newTaskName"
+    multiLine={false}
+    rows={1}
+    type="text"
+    underlineShow={true}
+  />
+  <br />
+  <TextField
+    disabled={false}
+    floatingLabelFixed={false}
+    fullWidth={true}
+    hintText="Task Description"
+    id="newTaskDescription"
+    multiLine={false}
+    rows={1}
+    type="text"
+    underlineShow={true}
+  />
+</Dialog>
+`;
+
+exports[`should render AddTaskLabel correctly 1`] = `
+<div
+  className="column addTask"
+>
+  <h3>
+    Add Task
+  </h3>
+  <FloatingActionButton
+    disabled={false}
+    mini={true}
+    onClick={undefined}
+    secondary={false}
+    style={
+      Object {
+        "marginLeft": 10,
+      }
+    }
+    zDepth={2}
+  >
+    <ContentAdd />
+  </FloatingActionButton>
+</div>
+`;
+
+exports[`should render Column correctly 1`] = `
+<div
+  className="column"
+>
+  <h3 />
+</div>
+`;
+
+exports[`should render TaskCard correctly 1`] = `
+<Card
+  className="card"
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+>
+  <CardHeader
+    avatar={null}
+    subtitle={undefined}
+    title={undefined}
+  />
+  <CardText />
+  <CardActions>
+    <RaisedButton
+      disabled={false}
+      fullWidth={false}
+      label={undefined}
+      labelPosition="after"
+      onClick={[Function]}
+      primary={true}
+      secondary={false}
+      style={
+        Object {
+          "float": "right",
+          "marginBottom": 15,
+        }
+      }
+    />
+  </CardActions>
+</Card>
+`;
