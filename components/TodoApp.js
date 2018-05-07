@@ -18,6 +18,10 @@ export default class TodoApp extends Component {
     this.setState(() => ({ addTaskDialogueVisible: true }));
   }
 
+  hideAddTaskDialogue = () => {
+    this.setState(() => ({ addTaskDialogueVisible: false }));
+  }
+
   // creates new task based on text entered in <AddTaskDialogue />
   addTaskToState = () => {
     let { tasks } = this.state;
@@ -57,7 +61,7 @@ export default class TodoApp extends Component {
     return (
       <div className={'container'}>
         <AddTaskLabel showAddTaskDialogue={this.showAddTaskDialogue}/>
-        <AddTaskDialogue visible={addTaskDialogueVisible} addTask={this.addTaskToState}/>
+        <AddTaskDialogue visible={addTaskDialogueVisible} addTask={this.addTaskToState} hideDialog={this.hideAddTaskDialogue}/>
         <Column label='todo' tasks={tasks} state={'todo'} progressTask={this.progressTask}/>
         <Column label='in-progress' tasks={tasks} state={'in-progress'} progressTask={this.progressTask}/>
         <Column label='complete' tasks={tasks} state={'complete'} progressTask={this.progressTask}/>

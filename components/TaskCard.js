@@ -10,7 +10,7 @@ export const TaskCard = ({ id, state, name, description, progressTask }) => (
     <CardHeader title={name} subtitle={id} />
     <CardText>{description}</CardText>
     <CardActions>
-      <RaisedButton onClick={() => progressTask(id)} label={typeActionLookup[state]} primary={true} style={{ float: 'right', marginBottom: 15 }} />
+      <RaisedButton onClick={() => progressTask(id)} label={typeActionLookup[state]} primary={true} style={{float: 'right', marginBottom: 15}} />
     </CardActions>
   </Card>
 );

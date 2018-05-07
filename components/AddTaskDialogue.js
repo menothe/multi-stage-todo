@@ -5,8 +5,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 
 // popup for user to submit a new task
-export const AddTaskDialogue = ({ visible, addTask }) => (
-  <Dialog modal={true} open={visible}
+export const AddTaskDialogue = ({ visible, addTask, hideDialog }) => (
+  <Dialog modal={false} open={visible} onRequestClose={hideDialog}
     actions={[
       <RaisedButton onClick={addTask} label='Add Task' primary={true} style={{ float: 'right', marginBottom: 15 }} />
     ]}
